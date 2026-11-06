@@ -1,0 +1,99 @@
+/* ---------- Botón de música de fondo (transparente, ícono tipo sticker) ---------- */
+.music-btn {
+  --music-color: #c9a96a; /* color del borde y del ícono */
+
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  color: var(--music-color);
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid var(--music-color);
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.music-btn:hover {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.music-btn:focus-visible {
+  outline: 2px solid var(--music-color);
+  outline-offset: 4px;
+}
+
+/* Ícono */
+.music-btn svg {
+  width: 1.7rem;
+  height: 1.7rem;
+  overflow: visible;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+  transform-origin: 50% 60%;
+}
+
+/* Nota con línea tachada = detenida · Nota sola = suena */
+.music-btn .icon-on {
+  display: none;
+}
+
+.music-btn.is-playing .icon-on {
+  display: block;
+  animation: sticker-wiggle 1.6s ease-in-out infinite;
+}
+
+.music-btn.is-playing .icon-off {
+  display: none;
+}
+
+/* Detenida: se mece muy suave, como invitando a tocarla */
+.music-btn:not(.is-playing) .icon-off {
+  animation: sticker-idle 3.2s ease-in-out infinite;
+}
+
+/* Suena: baila como un sticker animado */
+@keyframes sticker-wiggle {
+  0%,
+  100% {
+    transform: rotate(-9deg) scale(1);
+  }
+  25% {
+    transform: rotate(9deg) translateY(-3px) scale(1.1);
+  }
+  50% {
+    transform: rotate(-6deg) scale(1);
+  }
+  75% {
+    transform: rotate(7deg) translateY(-3px) scale(1.1);
+  }
+}
+
+@keyframes sticker-idle {
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg) translateY(-1px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .music-btn.is-playing .icon-on,
+  .music-btn:not(.is-playing) .icon-off {
+    animation: none;
+  }
+}

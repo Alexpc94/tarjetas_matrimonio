@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/gallery-carousel.css" />
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/music-button.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -587,8 +588,52 @@
       </div>
     </footer>
 
+    <button
+      type="button"
+      class="music-btn"
+      id="musicBtn"
+      data-music-src="/audios/píano.mp3"
+      data-music-volume="0.25"
+      data-music-autostart="true"
+      aria-label="Activar la música de fondo"
+      title="Activar música"
+      aria-pressed="false"
+    >
+      <svg
+        class="icon-off"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M9 18V5l10-2v13" />
+        <circle cx="6" cy="18" r="3" />
+        <circle cx="16" cy="16" r="3" />
+        <path d="M3 3l18 18" />
+      </svg>
+      <svg
+        class="icon-on"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M9 18V5l10-2v13" />
+        <circle cx="6" cy="18" r="3" />
+        <circle cx="16" cy="16" r="3" />
+      </svg>
+    </button>
+
+    <script src="/js/music.js"></script>
     <script src="js/vendor/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/rsvp-whatsapp.js"></script>
+    <script src="../js/music.js"></script>
   </body>
 </html>
