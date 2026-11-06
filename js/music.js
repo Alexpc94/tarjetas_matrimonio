@@ -105,6 +105,14 @@
     }
   });
 
+  // Otras partes de la página (por ejemplo la portada de bienvenida) pueden pedir
+  // que empiece la música con: document.dispatchEvent(new CustomEvent("music:play"))
+  document.addEventListener("music:play", function () {
+    stoppedByUser = false;
+    stopWatching();
+    audio.play().catch(function () {});
+  });
+
   setState(false);
 
   if (autoStart) {

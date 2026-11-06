@@ -26,9 +26,41 @@
     <link rel="stylesheet" href="css/gallery-carousel.css" />
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/cover.css" />
     <link rel="stylesheet" href="../css/music-button.css" />
   </head>
   <body>
+    <div class="cover" data-cover role="dialog" aria-modal="true" aria-label="Invitación de boda de Alex y Noelia">
+      <img class="cover__bg" src="img/hero.jpeg" alt="" />
+
+      <div class="cover__inner">
+        <p class="cover__pre">Con mucho amor te invitamos a nuestra boda</p>
+        <p class="cover__names">Alex <span>&amp;</span> Noelia</p>
+        <p class="cover__sub">Tenemos algo muy especial que contarte</p>
+        <button type="button" class="cover__btn" data-cover-open>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="m3 7 9 6 9-6" />
+          </svg>
+          Abrir invitación
+        </button>
+      </div>
+    </div>
+    <noscript
+      ><style>
+        .cover {
+          display: none;
+        }
+      </style></noscript
+    >
     <a class="skip-link" href="#main">Saltar al contenido</a>
 
     <!-- ============================ HEADER ============================ -->
@@ -635,5 +667,6 @@
     <script src="js/main.js"></script>
     <script src="js/rsvp-whatsapp.js"></script>
     <script src="../js/music.js"></script>
+    <script src="../js/cover.js"></script>
   </body>
 </html>
