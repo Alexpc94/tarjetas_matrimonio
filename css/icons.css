@@ -1,0 +1,64 @@
+.detail-icon-wrap {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2px;
+}
+
+.detail-icon {
+  width: 37px;
+  height: 37px;
+  display: block;
+}
+
+.detail-icon-wrap svg.detail-icon--rings,
+.detail-icon-wrap svg.detail-icon--cake {
+  width: 38px;
+  height: 38px;
+  flex: none;
+  transition: transform 280ms ease;
+}
+
+.detail-icon-wrap:hover .detail-icon--rings {
+  transform: translateY(-2px) rotate(-2deg) scale(1.04);
+}
+
+.detail-icon-wrap:hover .detail-icon--cake {
+  transform: translateY(-2px) scale(1.04);
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+@media (max-width: 600px) {
+  .detail-icon-wrap {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+  }
+
+  .detail-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .detail-icon-wrap svg.detail-icon--rings,
+  .detail-icon-wrap svg.detail-icon--cake {
+    width: 40px;
+    height: 40px;
+    flex: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .detail-icon--rings,
+  .detail-icon--cake {
+    transition: none;
+  }
+}

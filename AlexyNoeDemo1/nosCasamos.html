@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="../css/cover.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
     <link rel="stylesheet" href="../css/music-button.css" />
   </head>
   <body>
@@ -219,30 +220,57 @@
               <div class="detail-body">
                 <h3>Los votos</h3>
                 <p class="place">Donde nuestras promesas se vuelven eternas</p>
+
                 <ul class="detail-list">
+                  <!-- Hora de la ceremonia -->
                   <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                      <circle cx="8.5" cy="14" r="5.5" />
-                      <circle cx="15.5" cy="14" r="5.5" />
-                      <path d="M9 4l3 3 3-3M12 7V2" />
-                    </svg>
-                    <span><b>4:00 PM</b> &mdash; el momento en que dos vidas se unen en una sola. Te esperamos desde las 3:30 PM.</span>
+                    <div class="detail-icon-wrap">
+                      <lord-icon
+                        src="https://cdn.lordicon.com/warimioc.json"
+                        trigger="hover"
+                        state="hover-oscillate"
+                        speed="0.4"
+                        colors="primary:#8c7770,secondary:#cbb5a9"
+                        class="detail-icon"
+                      >
+                      </lord-icon>
+                    </div>
+                    <span> <b>4:00 PM</b> — el momento en que dos vidas se unen en una sola. Te esperamos desde las 3:30 PM. </span>
                   </li>
+
+                  <!-- Ceremonia religiosa -->
                   <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                      <circle cx="12" cy="12" r="9" />
-                      <path d="M12 7v5l3 2" />
-                    </svg>
-                    <span>Una ceremonia religiosa, íntima y llena de amor, para decir "sí" frente a Dios y a quienes más queremos</span>
+                    <div class="detail-icon-wrap">
+                      <lord-icon
+                        src="https://cdn.lordicon.com/lqwwyuxv.json"
+                        trigger="morph"
+                        state="morph-open"
+                        speed="0.4"
+                        colors="primary:#8c7770,secondary:#cbb5a9"
+                        class="detail-icon"
+                      >
+                      </lord-icon>
+                    </div>
+                    <span> Una ceremonia religiosa, íntima y llena de amor, para decir "sí" frente a Dios y a quienes más queremos. </span>
                   </li>
+
+                  <!-- Lugar -->
                   <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                      <path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11Z" />
-                      <circle cx="12" cy="10" r="2.5" />
-                    </svg>
-                    <span>La Iglesia <b>Catedral</b>, Tarija</span>
+                    <div class="detail-icon-wrap">
+                      <lord-icon
+                        src="https://cdn.lordicon.com/fshosubk.json"
+                        trigger="hover"
+                        state="hover-pinch"
+                        speed="0.4"
+                        colors="primary:#8c7770,secondary:#cbb5a9"
+                        class="detail-icon"
+                      >
+                      </lord-icon>
+                    </div>
+                    <span> La Iglesia <b>Catedral</b>, Tarija. </span>
                   </li>
                 </ul>
+
                 <a
                   href="https://www.google.com/maps/search/?api=1&amp;query=Catedral+de+Tarija+Bolivia"
                   class="btn-ec btn-ec--ghost"
@@ -263,38 +291,98 @@
                 <p class="place">Salón de Eventos Galas · Una noche para recordar</p>
                 <ul class="detail-list">
                   <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                      <path d="M7 3l1 8a4 4 0 0 0 8 0l1-8" />
-                      <path d="M12 15v6M9 21h6" />
-                    </svg>
+                    <div class="detail-icon-wrap">
+                      <lord-icon
+                        src="https://cdn.lordicon.com/yvgmrqny.json"
+                        trigger="hover"
+                        state="hover-cheers"
+                        speed="0.4"
+                        colors="primary:#8c7770,secondary:#cbb5a9"
+                        class="detail-icon"
+                      >
+                      </lord-icon>
+                    </div>
                     <span><b>5:00 PM</b> &mdash; Recepción y brindis de bienvenida.</span>
                   </li>
                   <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                      <circle cx="8.5" cy="14" r="5.5" />
-                      <circle cx="15.5" cy="14" r="5.5" />
-                      <path d="M9 4l3 3 3-3M12 7V2" />
-                    </svg>
+                    <div class="detail-icon-wrap">
+                      <svg class="detail-icon detail-icon--rings" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                        <defs>
+                          <linearGradient id="ring-gold" x1="27" y1="24" x2="52" y2="49" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#f2dfb6" />
+                            <stop offset="0.55" stop-color="#c49b62" />
+                            <stop offset="1" stop-color="#ead4a8" />
+                          </linearGradient>
+                        </defs>
+                        <circle cx="23" cy="40" r="14" stroke="#8c7770" stroke-width="5" />
+                        <circle cx="41" cy="40" r="14" stroke="url(#ring-gold)" stroke-width="5" />
+                        <path d="m41 10 5 6-5 6-5-6 5-6Z" fill="#f2dfb6" stroke="#a98859" stroke-width="1.5" />
+                        <path d="M41 10v12M36 16h10" stroke="#fffaf0" stroke-width="1" />
+                      </svg>
+                    </div>
                     <span><b>6:00 PM</b> &mdash; Matrimonio civil.</span>
                   </li>
                   <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                      <path d="M12 21s-7-4.4-9.2-8.6C1 9 2.7 5 6.5 5 9 5 12 8 12 8s3-3 5.5-3C21.3 5 23 9 21.2 12.4 19 16.6 12 21 12 21Z" />
-                    </svg>
+                    <div class="detail-icon-wrap">
+                      <lord-icon
+                        src="https://cdn.lordicon.com/ohcuigqh.json"
+                        trigger="hover"
+                        state="hover-pinch"
+                        speed="0.4"
+                        colors="primary:#8c7770,secondary:#cbb5a9"
+                        class="detail-icon"
+                      >
+                      </lord-icon>
+                    </div>
                     <span><b>8:30 PM</b> &mdash; Nuestro primer baile como esposos.</span>
                   </li>
                   <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                      <path d="M5 21h14M6 21v-7h12v7M8 14V9h8v5M12 9V5" />
-                      <path d="M12 3v1" />
-                    </svg>
+                    <div class="detail-icon-wrap">
+                      <svg class="detail-icon detail-icon--cake" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                        <defs>
+                          <linearGradient id="cake-cream" x1="13" y1="17" x2="47" y2="54" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#fffdf8" />
+                            <stop offset="1" stop-color="#f2e3d8" />
+                          </linearGradient>
+                        </defs>
+                        <path d="M8 55h48" stroke="#8c7770" stroke-width="2" stroke-linecap="round" />
+                        <path d="M12 38h40v13a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V38Z" fill="url(#cake-cream)" stroke="#8c7770" stroke-width="1.7" />
+                        <path d="M17 27h30v11H17z" fill="url(#cake-cream)" stroke="#8c7770" stroke-width="1.7" />
+                        <path d="M21 16h22v11H21z" fill="url(#cake-cream)" stroke="#8c7770" stroke-width="1.7" />
+                        <path d="M21 16c2 2 3 2 5 0 2 2 4 2 6 0 2 2 4 2 6 0 2 2 3 2 5 0" stroke="#c49b62" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                          d="M17 27c2 2 3 2 5 0 2 2 4 2 6 0 2 2 4 2 6 0 2 2 4 2 6 0 2 2 3 2 5 0"
+                          stroke="#c49b62"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M12 38c2 2 3 2 5 0 2 2 4 2 6 0 2 2 4 2 6 0 2 2 4 2 6 0 2 2 4 2 6 0 2 2 3 2 5 0 2 2 3 2 6 0"
+                          stroke="#c49b62"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path d="M24 33h2m12 0h2m-19 16h2m17 0h2" stroke="#c49b62" stroke-width="2" stroke-linecap="round" />
+                        <path d="M32 16V9" stroke="#8c7770" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M32 6c-3 0-4 2-4 4 3 0 4-1 4-4Zm1 4c0-3 2-4 4-4 0 3-1 4-4 4Z" fill="#c49b62" />
+                        <circle cx="18" cy="44" r="1.7" fill="#c89d9a" />
+                        <circle cx="46" cy="44" r="1.7" fill="#c89d9a" />
+                      </svg>
+                    </div>
                     <span><b>9:00 PM</b> &mdash; Corte de la torta, el momento más dulce de la noche.</span>
                   </li>
                   <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                      <path d="M7 3l1 8a4 4 0 0 0 8 0l1-8" />
-                      <path d="M12 15v6M9 21h6" />
-                    </svg>
+                    <div class="detail-icon-wrap">
+                      <lord-icon
+                        src="https://cdn.lordicon.com/zzshwbbd.json"
+                        trigger="hover"
+                        state="hover-swirl"
+                        speed="0.4"
+                        colors="primary:#8c7770,secondary:#cbb5a9"
+                        class="detail-icon"
+                      >
+                      </lord-icon>
+                    </div>
                     <span>Barra libre y bocadillos durante toda la fiesta.</span>
                   </li>
                 </ul>
@@ -366,23 +454,27 @@
 
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="img/gallery1.jpeg" alt="Alex y Noelia juntos durante una salida al atardecer" />
+                <img src="img/fotosnovio/foto2.jpg" alt="Alex y Noelia juntos durante una salida al atardecer" />
+                <div class="gallery-caption">los mas lindos recuerdos</div>
+              </div>
+              <div class="carousel-item active">
+                <img src="img/fotosnovio/foto4.jpg" alt="Alex y Noelia juntos durante una salida al atardecer" />
                 <div class="gallery-caption">Contigo, hasta el sol se detiene a mirar</div>
               </div>
               <div class="carousel-item">
-                <img src="img/gallery2.jpeg" alt="Alex y Noelia abrazados mientras cae el sol" loading="lazy" />
+                <img src="img/fotosnovio/foto5.jpg" alt="Alex y Noelia abrazados mientras cae el sol" loading="lazy" />
                 <div class="gallery-caption">Tardes doradas a tu lado</div>
               </div>
               <div class="carousel-item">
-                <img src="img/gallery3.jpeg" alt="Alex y Noelia sonriendo en una de sus salidas" loading="lazy" />
+                <img src="img/fotosnovio/foto6.jpg" alt="Alex y Noelia sonriendo en una de sus salidas" loading="lazy" />
                 <div class="gallery-caption">Salidas simples, recuerdos infinitos</div>
               </div>
               <div class="carousel-item">
-                <img src="img/gallery4.jpeg" alt="Alex y Noelia disfrutando el cielo del atardecer" loading="lazy" />
+                <img src="img/fotosnovio/foto7.jpg" alt="Alex y Noelia disfrutando el cielo del atardecer" loading="lazy" />
                 <div class="gallery-caption">Cada atardecer contigo es un regalo</div>
               </div>
               <div class="carousel-item">
-                <img src="img/gallery5.jpeg" alt="Alex y Noelia mirando juntos el horizonte" loading="lazy" />
+                <img src="img/fotosnovio/foto8.jpg" alt="Alex y Noelia mirando juntos el horizonte" loading="lazy" />
                 <div class="gallery-caption">Mirando el mismo cielo, soñando el mismo futuro</div>
               </div>
             </div>
@@ -416,7 +508,7 @@
           <div class="party-grid">
             <article class="party-card reveal">
               <div class="party-portrait">
-                <img src="img/padrinos1.jpeg" alt="Retrato de los padrinos" loading="lazy" />
+                <img src="img/padrinos/padrino1.jpeg" alt="Retrato de los padrinos" loading="lazy" />
               </div>
               <p class="party-role">Padrinos de matrimonio</p>
               <h4>Alex Perez Castillo &amp; Noelia Ibarra Galindo</h4>
@@ -424,7 +516,7 @@
             </article>
             <article class="party-card reveal">
               <div class="party-portrait">
-                <img src="img/padrinos2.jpeg" alt="Retrato de los padrinos" loading="lazy" />
+                <img src="img/padrinos/padrino2.jpg" alt="Retrato de los padrinos" loading="lazy" />
               </div>
               <p class="party-role">Padrinos de anillos</p>
               <h4>Alex Perez Castillo &amp; Noelia Ibarra Galindo</h4>
@@ -432,7 +524,7 @@
             </article>
             <article class="party-card reveal">
               <div class="party-portrait">
-                <img src="img/padrinos3.jpeg" alt="Retrato de los padrinos" loading="lazy" />
+                <img src="img/padrinos/padrino3.jpg" alt="Retrato de los padrinos" loading="lazy" />
               </div>
               <p class="party-role">Padrinos de brindis</p>
               <h4>Alex Perez Castillo &amp; Noelia Ibarra Galindo</h4>
@@ -474,7 +566,7 @@
                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
                             <path d="M20 6 9 17l-5-5" />
                           </svg>
-                          Acepto con alegría
+                          CONFIRMO MI ASISTENCIA
                         </label>
                       </div>
                       <div class="attend-opt">
@@ -668,5 +760,6 @@
     <script src="js/rsvp-whatsapp.js"></script>
     <script src="../js/music.js"></script>
     <script src="../js/cover.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@lordicon/element@3.0.2"></script>
   </body>
 </html>
