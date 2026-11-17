@@ -712,6 +712,19 @@ a:hover {
 .detail-list li:last-child {
   border-bottom: 0;
 }
+.detail-list li > span {
+  min-width: 0;
+  position: relative;
+  z-index: 2;
+}
+.detail-list li lord-icon.detail-icon,
+.detail-list li svg.detail-icon {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  overflow: hidden;
+  margin-top: 0;
+}
 .detail-list svg {
   width: 20px;
   height: 20px;
